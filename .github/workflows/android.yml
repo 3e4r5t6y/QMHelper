@@ -37,8 +37,8 @@ jobs:
       - name: Generate signing config
         run: |
           key_base64="${{ secrets.SIGNING_KEY }}"
-          echo -n "$key_base64" | base64 -d > signing.jks
-          echo "releaseStoreFile=signing.jks" >> gradle.properties
+          echo -n "$key_base64" | base64 -d > qq.jks
+          echo "releaseStoreFile=qq.jks" >> gradle.properties
           echo "releaseStorePassword=758165" >> gradle.properties
           echo "releaseKeyAlias=qq" >> gradle.properties
           echo "releaseKeyPassword=758165" >> gradle.properties
