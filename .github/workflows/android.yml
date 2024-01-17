@@ -39,9 +39,9 @@ jobs:
           key_base64="${{ secrets.SIGNING_KEY }}"
           echo -n "$key_base64" | base64 -d > signing.jks
           echo "releaseStoreFile=signing.jks" >> gradle.properties
-          echo "releaseStorePassword=android" >> gradle.properties
-          echo "releaseKeyAlias=androiddebugkey" >> gradle.properties
-          echo "releaseKeyPassword=android" >> gradle.properties
+          echo "releaseStorePassword=758165" >> gradle.properties
+          echo "releaseKeyAlias=qq" >> gradle.properties
+          echo "releaseKeyPassword=758165" >> gradle.properties
 
       - name: Build with Gradle
         run: |
